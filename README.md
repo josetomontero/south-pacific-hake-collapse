@@ -7,7 +7,7 @@ the assessment cases and to the acoustic-survey biomass. Population-dynamics mod
 jumbo squid predation) are fitted to the IFOP stock-assessment biomass of South Pacific hake,
 1968-2020.
 
-Repository URL/DOI: to be added by the authors
+Repository: <https://github.com/josetomontero/south-pacific-hake-collapse>
 
 License: to be chosen by the authors
 
