@@ -9,7 +9,8 @@ jumbo squid predation) are fitted to the IFOP stock-assessment biomass of South 
 
 Repository: <https://github.com/josetomontero/south-pacific-hake-collapse>
 
-License: to be chosen by the authors
+License: MIT for the code and CC BY 4.0 for the data and outputs produced by the authors. The
+illustration of the hake is copyrighted (see "License and copyright" below).
 
 ## How to run
 
@@ -139,3 +140,22 @@ biomass from Table 10 of the IFOP 2024 survey report (Molina et al. 2025) and va
 Figure 3 of Tascheri (2022).
 
 `figures/hake_illustration_Salinas_Nass.png`. Illustration by Pablo Salinas Nass, used in Figure 1.
+© Pablo Salinas Nass, reproduced with permission (see `figures/COPYRIGHT.md`).
+
+## License and copyright
+
+- Code (`R/`, `python/`, `appendix_analyses/*/R/`, `appendix_analyses/*/python/`, `run_all.R`). MIT
+  License, see `LICENSE`.
+- Data and outputs produced by the authors (`data/derived/`, `results/`, the tables and figures of
+  `appendix_analyses/`, and the files digitized or extracted by the authors). Creative Commons
+  Attribution 4.0 International (CC BY 4.0), <https://creativecommons.org/licenses/by/4.0/>.
+- Source data of other institutions. The catch series of SERNAPESCA, the stock-assessment and
+  survey series of IFOP, the HadISST1 sea surface temperature of the Met Office Hadley Centre, the
+  Oceanic Niño Index of the NOAA Climate Prediction Center, the Large Marine Ecosystem boundary of
+  NOAA and the Natural Earth coastline are public data of those institutions. They are included to
+  reproduce the analysis and remain under the terms of their providers, who must be cited as their
+  source.
+- Illustration of the hake (`figures/hake_illustration_Salinas_Nass.png`, also part of
+  `results/figs/Fig_1.png`). © Pablo Salinas Nass, all rights reserved. Reproduced with the written
+  permission of its author. It is not covered by the licenses above and may not be reused without
+  the permission of its author (`figures/COPYRIGHT.md`).
