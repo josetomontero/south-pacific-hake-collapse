@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This license applies to the code of this repository (the files of R/, python/,
-appendix_analyses/*/R/, appendix_analyses/*/python/ and run_all.R). The terms
-for the data, the outputs and the illustration are in the section "License and
-copyright" of README.md.
