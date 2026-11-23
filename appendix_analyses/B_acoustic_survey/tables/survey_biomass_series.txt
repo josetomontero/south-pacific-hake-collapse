@@ -1,0 +1,28 @@
+year	survey_t	source
+1995	505700	digitised, Fig. 3 IFOP 2022 status report
+1997	713400	digitised, Fig. 3 IFOP 2022 status report
+1999	901400	digitised, Fig. 3 IFOP 2022 status report
+2000	890500	digitised, Fig. 3 IFOP 2022 status report
+2001	916700	digitised, Fig. 3 IFOP 2022 status report
+2002	1555422	Table 10, IFOP survey report 2024
+2004	273860	Table 10, IFOP survey report 2024
+2005	223721	Table 10, IFOP survey report 2024
+2006	266596	Table 10, IFOP survey report 2024
+2007	278700	Table 10, IFOP survey report 2024
+2008	313778	Table 10, IFOP survey report 2024
+2009	322729	Table 10, IFOP survey report 2024
+2010	284575	Table 10, IFOP survey report 2024
+2011	290331	Table 10, IFOP survey report 2024
+2012	273954	Table 10, IFOP survey report 2024
+2013	224997	Table 10, IFOP survey report 2024
+2014	204997	Table 10, IFOP survey report 2024
+2015	211883	Table 10, IFOP survey report 2024
+2016	242920	Table 10, IFOP survey report 2024
+2017	301330	Table 10, IFOP survey report 2024
+2018	304710	Table 10, IFOP survey report 2024
+2019	356883	Table 10, IFOP survey report 2024
+2020	349031	Table 10, IFOP survey report 2024
+2021	342125	Table 10, IFOP survey report 2024
+2022	344251	Table 10, IFOP survey report 2024
+2023	362574	Table 10, IFOP survey report 2024
+2024	300948	Table 10, IFOP survey report 2024

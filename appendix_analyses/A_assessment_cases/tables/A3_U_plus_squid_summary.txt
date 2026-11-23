@@ -1,0 +1,6 @@
+series	n	Rm	best	w_best	dAICc_5_U_lateral	dAICc_8_squid	dAICc_9_Ulat_squid	w_9	b_9	b_SE_9	LR_p_9_vs_5	dAICc_10_Uvert_squid	w_10	b_10	b_SE_10	LR_p_10_vs_2
+Paper series	19	0.31	5 U lateral	0.568	0	9.33	2.76	0.143	4.76e-05	0.000172	0.786	4.78	0.0519	4.39e-05	0.000191	0.821
+Case 0: official landings	20	0.29	2 U vertical	0.271	0.0247	3.37	0.87	0.175	0.000243	0.000184	0.205	0.446	0.217	0.000257	0.000176	0.164
+Case 1: official landings, Francis weighting	20	0.19	9 U lateral + squid	0.306	1.21	0.0342	0	0.306	0.000272	0.00014	0.0691	2.06	0.11	0.000321	0.000148	0.0449
+Case 2: CCT catches	20	0.28	5 U lateral	0.695	0	10.1	2.78	0.173	1.46e-05	0.000153	0.925	6.71	0.0242	6.06e-05	0.000174	0.731
+Case 3: CCT catches, Francis weighting	20	0.2	5 U lateral	0.682	0	7.06	2.32	0.214	7.73e-05	0.000121	0.533	7.87	0.0133	0.000148	0.000144	0.318

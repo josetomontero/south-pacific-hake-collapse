@@ -1,0 +1,49 @@
+Model selection over the full candidate set (R/20_candidate_set_selection.R)
+RMSD: every predicted year against the observed log biomass of the same year
+
+== Whole period 1968-2020, n = 52
+models fitted: 243; converged: 243; valid: 215; structures: 27; models with DAICc < 2: 4
+models with DAICc < 2 (evidence ratio = w of the lowest AICc model / w of the model):
+   R ~ 0.31 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) + b * U[t]         K 4  DAICc 0.00  ER 1.00  wi 0.149  R2 0.585  RMSD 0.1486
+   R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-1]) * exp(Xt) + b * U[t]       K 4  DAICc 0.16  ER 1.09  wi 0.138  R2 0.583  RMSD 0.1449
+   R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt) + b * U[t]       K 4  DAICc 1.35  ER 1.96  wi 0.076  R2 0.576  RMSD 0.1581
+   R ~ 0.31 - (c + e * SST[t-2] + d * ENSO[t-2]) * exp(Xt) + b * U[t]       K 4  DAICc 1.94  ER 2.63  wi 0.057  R2 0.570  RMSD 0.1552
+selected (fewest parameters, then lowest RMSD): R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-1]) * exp(Xt) + b * U[t]  [structure 18, DAICc 0.16, wi 0.138, W structure 0.490, R2 0.583, RMSD 0.1449]
+model of models_1968_2020.txt (ID 18) in this set: AICc -97.228 (table -97.228), RMSD with the expression of that step 0.1429 (table 0.1429)
+weight of the structures (priors of section 4.6 | equal priors over all models), first five:
+   structure 18  lag versions 16  W 0.490 | 0.535
+   structure 27  lag versions 16  W 0.236 | 0.258
+   structure 21  lag versions 16  W 0.127 | 0.139
+   structure 19  lag versions  4  W 0.042 | 0.012
+   structure 17  lag versions  4  W 0.040 | 0.011
+95% confidence set of models (section 4.5): 52 models
+
+== Low exploitation period 1975-2000, n = 26
+models fitted: 243; converged: 243; valid: 243; structures: 27; models with DAICc < 2: 1
+models with DAICc < 2 (evidence ratio = w of the lowest AICc model / w of the model):
+   R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt)                      K 3  DAICc 0.00  ER 1.00  wi 0.321  R2 0.617  RMSD 0.0732
+selected (fewest parameters, then lowest RMSD): R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt)  [structure 7, DAICc 0.00, wi 0.321, W structure 0.465, R2 0.617, RMSD 0.0732]
+model of models_1975_2000.txt (ID 7) in this set: AICc -65.452 (table -65.452), RMSD with the expression of that step 0.0762 (table 0.0762)
+weight of the structures (priors of section 4.6 | equal priors over all models), first five:
+   structure  7  lag versions 16  W 0.465 | 0.531
+   structure  8  lag versions 16  W 0.192 | 0.220
+   structure 18  lag versions 16  W 0.130 | 0.149
+   structure  4  lag versions  4  W 0.063 | 0.018
+   structure  6  lag versions  4  W 0.050 | 0.014
+95% confidence set of models (section 4.5): 33 models
+
+== Collapsed period 2001-2020, n = 19
+models fitted: 20; converged: 20; valid: 20; structures: 8; models with DAICc < 2: 2
+models with DAICc < 2 (evidence ratio = w of the lowest AICc model / w of the model):
+   R ~ 0.31 - (c + e * U[t]) * exp(Xt)                                      K 2  DAICc 0.00  ER 1.00  wi 0.711  R2 0.749  RMSD 0.1494
+   R ~ 0.31 - c * exp(Xt) + d * U[t]                                        K 2  DAICc 2.00  ER 2.71  wi 0.262  R2 0.731  RMSD 0.1752
+selected (fewest parameters, then lowest RMSD): R ~ 0.31 - (c + e * U[t]) * exp(Xt)  [structure 5, DAICc 0.00, wi 0.711, W structure 0.711, R2 0.749, RMSD 0.1494]
+model of models_2001_2020.txt (ID 5) in this set: AICc -28.764 (table -28.764), RMSD with the expression of that step 0.1501 (table 0.1501)
+weight of the structures (priors of section 4.6 | equal priors over all models), first five:
+   structure  5  lag versions  1  W 0.711 | 0.674
+   structure  2  lag versions  1  W 0.262 | 0.249
+   structure  6  lag versions  4  W 0.014 | 0.053
+   structure  8  lag versions  1  W 0.007 | 0.006
+   structure  3  lag versions  4  W 0.002 | 0.007
+95% confidence set of models (section 4.5): 2 models
+

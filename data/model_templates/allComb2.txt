@@ -1,0 +1,28 @@
+det1	det2	det3
+		
++b*V1		
++e*V2		
++d*V3		
++b*V1+e*V2		
++b*V1+d*V3		
++e*V2+d*V3		
++b*V1+e*V2+d*V3		
+	+b*V1	
+	+e*V2	
+	+d*V3	
+	+b*V1+e*V2	
+	+b*V1+d*V3	
+	+e*V2+d*V3	
+	+b*V1+e*V2+d*V3	
++e*V2	+b*V1	
++d*V3	+b*V1	
++e*V2+d*V3	+b*V1	
++b*V1	+e*V2	
++d*V3	+e*V2	
++b*V1+d*V3	+e*V2	
++b*V1	+d*V3	
++e*V2	+d*V3	
++b*V1+e*V2	+d*V3	
++d*V3	+b*V1+e*V2	
++e*V2	+b*V1+d*V3	
++b*V1	+e*V2+d*V3	

@@ -1,0 +1,115 @@
+Lag fits: SST and ENSO at lags 0-3, three periods (R/10_lag_fits.R)
+
+== P1 (Whole period 1968-2020), n = 52
+unique models: 243; converged: 243; valid (k_t > 0 in every year): 215; valid with dAICc < 2: 4
+best of all models: R ~ 0.31 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) + b * U[t] (structure 18, AICc -97.39, valid TRUE)
+best valid model:   R ~ 0.31 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) + b * U[t] (structure 18, AICc -97.39, wi 0.163, R2 0.59)
+   diagnostics of the best valid model: converged TRUE, Shapiro-Wilk P = 0.37, residual lag-1 autocorrelation = -0.15
+valid models with dAICc < 2:
+   R ~ 0.31 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) + b * U[t]               dAICc 0.00  wi 0.163  R2 0.59
+   R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-1]) * exp(Xt) + b * U[t]             dAICc 0.16  wi 0.150  R2 0.58
+   R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt) + b * U[t]             dAICc 1.35  wi 0.083  R2 0.58
+   R ~ 0.31 - (c + e * SST[t-2] + d * ENSO[t-2]) * exp(Xt) + b * U[t]             dAICc 1.94  wi 0.062  R2 0.57
+summed wi (valid models) by SST lag  0/1/2/3: 0.26 / 0.35 / 0.22 / 0.16
+summed wi (valid models) by ENSO lag 0/1/2/3: 0.11 / 0.52 / 0.30 / 0.06
+structure of the paper (model 18) by lag, best five:
+                                                             Models   AICc
+   R ~ 0.31 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) + b * U[t] -97.39
+ R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-1]) * exp(Xt) + b * U[t] -97.23
+ R ~ 0.31 - (c + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt) + b * U[t] -96.04
+ R ~ 0.31 - (c + e * SST[t-2] + d * ENSO[t-2]) * exp(Xt) + b * U[t] -95.45
+ R ~ 0.31 - (c + e * SST[t-2] + d * ENSO[t-1]) * exp(Xt) + b * U[t] -93.68
+ DAICc_valid wi_valid     R2
+      0.0000  0.16307 0.5852
+      0.1635  0.15027 0.5826
+      1.3471  0.08315 0.5759
+      1.9374  0.06190 0.5701
+      3.7112  0.02550 0.5525
+
+== P2 (Low exploitation period 1975-2000), n = 26
+unique models: 243; converged: 243; valid (k_t > 0 in every year): 243; valid with dAICc < 2: 1
+best of all models: R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt) (structure 7, AICc -65.45, valid TRUE)
+best valid model:   R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt) (structure 7, AICc -65.45, wi 0.367, R2 0.62)
+   diagnostics of the best valid model: converged TRUE, Shapiro-Wilk P = 0.27, residual lag-1 autocorrelation = 0.06
+valid models with dAICc < 2:
+   R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt)                            dAICc 0.00  wi 0.367  R2 0.62
+summed wi (valid models) by SST lag  0/1/2/3: 0.69 / 0.20 / 0.05 / 0.03
+summed wi (valid models) by ENSO lag 0/1/2/3: 0.79 / 0.19 / 0.01 / 0.00
+structure of the paper (model 7) by lag, best five:
+                                                  Models   AICc DAICc_valid
+     R ~ 0.21 - (c + e * SST[t] + d * ENSO[t]) * exp(Xt) -65.45       0.000
+   R ~ 0.21 - (c + e * SST[t-1] + d * ENSO[t]) * exp(Xt) -61.71       3.745
+ R ~ 0.21 - (c + e * SST[t-1] + d * ENSO[t-1]) * exp(Xt) -61.22       4.232
+   R ~ 0.21 - (c + e * SST[t] + d * ENSO[t-1]) * exp(Xt) -61.13       4.325
+   R ~ 0.21 - (c + e * SST[t-2] + d * ENSO[t]) * exp(Xt) -58.30       7.152
+ wi_valid     R2
+  0.36670 0.6169
+  0.05638 0.5535
+  0.04420 0.5734
+  0.04218 0.6030
+  0.01026 0.4907
+
+== P3 (Collapsed period 2001-2020 - 27 structures, outside the rule of the paper for this period), n = 19
+unique models: 243; converged: 243; valid (k_t > 0 in every year): 243; valid with dAICc < 2: 38
+best of all models: R ~ 0.31 - (c + b * U[t] + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt) (structure 8, AICc -30.39, valid TRUE)
+best valid model:   R ~ 0.31 - (c + b * U[t] + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt) (structure 8, AICc -30.39, wi 0.024, R2 0.80)
+   diagnostics of the best valid model: converged TRUE, Shapiro-Wilk P = 0.43, residual lag-1 autocorrelation = -0.57
+valid models with dAICc < 2:
+   R ~ 0.31 - (c + b * U[t] + e * SST[t-1] + d * ENSO[t-2]) * exp(Xt)             dAICc 0.00  wi 0.024  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t]) * exp(Xt)                               dAICc 0.11  wi 0.023  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t]) * exp(Xt) + d * ENSO[t-2]               dAICc 0.21  wi 0.022  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t]) * exp(Xt) + d * ENSO[t-3]               dAICc 0.23  wi 0.022  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t]) * exp(Xt) + d * ENSO[t-1]               dAICc 0.24  wi 0.021  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t]) * exp(Xt) + d * ENSO[t]                 dAICc 0.27  wi 0.021  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t] + d * ENSO[t-1]) * exp(Xt)               dAICc 0.52  wi 0.019  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + d * ENSO[t]) * exp(Xt) + e * SST[t-2]               dAICc 0.63  wi 0.018  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + d * ENSO[t]) * exp(Xt) + e * SST[t-3]               dAICc 0.64  wi 0.018  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + d * ENSO[t]) * exp(Xt) + e * SST[t-1]               dAICc 0.65  wi 0.017  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + d * ENSO[t]) * exp(Xt) + e * SST[t]                 dAICc 0.69  wi 0.017  R2 0.80
+   R ~ 0.31 - (c + b * U[t] + e * SST[t] + d * ENSO[t-2]) * exp(Xt)               dAICc 0.88  wi 0.016  R2 0.80
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-3]                             dAICc 0.92  wi 0.015  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + d * ENSO[t-3]                            dAICc 0.93  wi 0.015  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-2]                             dAICc 0.98  wi 0.015  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + d * ENSO[t-2]                            dAICc 1.00  wi 0.015  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + d * ENSO[t]                              dAICc 1.04  wi 0.014  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-1]                             dAICc 1.04  wi 0.014  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + e * SST[t]                               dAICc 1.05  wi 0.014  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + d * ENSO[t-1]                            dAICc 1.06  wi 0.014  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t]                               dAICc 1.09  wi 0.014  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + d * ENSO[t]                              dAICc 1.10  wi 0.014  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + d * ENSO[t-1]                            dAICc 1.12  wi 0.014  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-1] + d * ENSO[t-3]             dAICc 1.12  wi 0.014  R2 0.79
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + e * SST[t-1]                             dAICc 1.16  wi 0.014  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + d * ENSO[t-2]                            dAICc 1.20  wi 0.013  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + e * SST[t-2]                             dAICc 1.22  wi 0.013  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + d * ENSO[t-3]                            dAICc 1.24  wi 0.013  R2 0.75
+   R ~ 0.31 - (c) * exp(Xt) + b * U[t] + e * SST[t-3]                             dAICc 1.24  wi 0.013  R2 0.75
+   R ~ 0.31 - (c + b * U[t] + e * SST[t-2] + d * ENSO[t-3]) * exp(Xt)             dAICc 1.54  wi 0.011  R2 0.79
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t] + d * ENSO[t-3]               dAICc 1.54  wi 0.011  R2 0.79
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt)                                            dAICc 1.62  wi 0.011  R2 0.75
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-3] + d * ENSO[t-1]             dAICc 1.72  wi 0.010  R2 0.78
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-3] + d * ENSO[t]               dAICc 1.74  wi 0.010  R2 0.78
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-2] + d * ENSO[t-3]             dAICc 1.83  wi 0.010  R2 0.78
+   R ~ 0.31 - (c + b * U[t]) * exp(Xt) + e * SST[t-1] + d * ENSO[t-2]             dAICc 1.84  wi 0.010  R2 0.78
+   R ~ 0.31 - (c + b * U[t] + e * SST[t-1] + d * ENSO[t-3]) * exp(Xt)             dAICc 1.88  wi 0.009  R2 0.79
+   R ~ 0.31 - (c + b * U[t] + e * SST[t] + d * ENSO[t]) * exp(Xt)                 dAICc 1.90  wi 0.009  R2 0.79
+summed wi (valid models) by SST lag  0/1/2/3: 0.30 / 0.22 / 0.16 / 0.16
+summed wi (valid models) by ENSO lag 0/1/2/3: 0.23 / 0.19 / 0.20 / 0.20
+structure 2 (U lateral, c + b U_t; no SST or ENSO, a single model):
+                              Models   AICc DAICc_valid wi_valid    R2
+ R ~ 0.31 - (c + b * U[t]) * exp(Xt) -28.76       1.624  0.01073 0.749
+
+== P3 (Collapsed period 2001-2020 - the eight structures of the paper), n = 19
+unique models: 20; converged: 20; valid (k_t > 0 in every year): 20; valid with dAICc < 2: 2
+best of all models: R ~ 0.31 - (c + e * U[t]) * exp(Xt) (structure 5, AICc -28.76, valid TRUE)
+best valid model:   R ~ 0.31 - (c + e * U[t]) * exp(Xt) (structure 5, AICc -28.76, wi 0.674, R2 0.75)
+   diagnostics of the best valid model: converged TRUE, Shapiro-Wilk P = 0.12, residual lag-1 autocorrelation = -0.14
+valid models with dAICc < 2:
+   R ~ 0.31 - (c + e * U[t]) * exp(Xt)                                            dAICc 0.00  wi 0.674  R2 0.75
+   R ~ 0.31 - c * exp(Xt) + d * U[t]                                              dAICc 2.00  wi 0.249  R2 0.73
+summed wi (valid models) by SST lag  0/1/2/3: 0.02 / 0.01 / 0.01 / 0.01
+summed wi (valid models) by ENSO lag 0/1/2/3: 0.00 / 0.00 / 0.00 / 0.00
+structure of the paper (model 5) by lag, best five:
+                              Models   AICc DAICc_valid wi_valid    R2
+ R ~ 0.31 - (c + e * U[t]) * exp(Xt) -28.76           0   0.6741 0.749
+

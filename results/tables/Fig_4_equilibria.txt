@@ -1,0 +1,5 @@
+key	regime	model	form	variable	value	fixed	Rm	c_eff	Xstar	Bstar_kt	B_min_kt	B_max_kt
+I_H0	I	1	H0	NA	NA	NA	0.21	1.8779e-07	13.927	1118.3	573	1479.5
+II_H0	II	1	H0	NA	NA	NA	0.31	1.0625e-06	12.584	291.8	181.6	845.6
+I_partial	I	7	lateral	ENSO	27.276	SST = 14.99	0.21	1.4438e-07	14.19	1454.5	573	1479.5
+II_partial	II	5	lateral	U	0.371	NA	0.31	1.6457e-06	12.146	188.4	181.6	845.6

@@ -1,0 +1,10 @@
+series	n	r_logB	log_q	q	RMSD_logB_after_q	AICc_on_assessment	dAICc_on_assessment
+1 basic	17	-0.137	-0.094	0.91	0.176	-15.9	12.87
+2 U vertical	17	0.409	0.091	1.095	0.166	-26.77	2
+3 SST vertical	17	-0.16	-0.022	0.978	0.214	-16.81	11.95
+4 ENSO vertical	17	-0.155	-0.021	0.979	0.214	-16.86	11.91
+5 U lateral	17	0.674	-0.003	0.997	0.127	-28.76	0
+6 SST lateral	17	0.495	-0.013	0.987	0.194	-21.96	6.8
+7 ENSO lateral	17	0.112	-0.1	0.905	0.168	-13.72	15.04
+8 squid predation	17	0.19	-0.027	0.973	0.169	-19.44	9.33
+Assessment biomass (paper)	17	0.571	0.105	1.11	0.186	NA	NA

@@ -1,0 +1,14 @@
+# Large external input (HadISST, ~485 MB). Download separately, see README.
+data/external/HadISST_sst.nc
+data/external/*.nc
+
+# R session files
+.Rhistory
+.Rapp.history
+.RData
+.Rproj.user/
+Rplots.pdf
+*.log
+
+# macOS
+.DS_Store

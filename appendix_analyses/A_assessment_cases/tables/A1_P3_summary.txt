@@ -1,0 +1,10 @@
+series	Rm	best	w_best	R2_best	best_param	dAICc_squid	w_squid	b_squid	dAICc_U_lateral
+Paper series	0.31	5 U lateral	0.705	0.75	3.98e-06	9.33	0.007	0.000409	0
+Case 0: official landings	0.29	2 U vertical	0.445	0.66	-0.63	3.37	0.083	0.000518	0.02
+Case 0: official landings [u of the case table]	0.29	2 U vertical	0.997	0.81	-0.869	13.42	0.001	0.000518	13.21
+Case 1: official landings, Francis weighting	0.19	8 squid predation	0.515	0.62	0.000382	0	0.515	0.000382	1.17
+Case 1: official landings, Francis weighting [u of the case table]	0.19	2 U vertical	0.934	0.72	-1.26	5.83	0.051	0.000382	11.62
+Case 2: CCT catches	0.28	5 U lateral	0.865	0.76	3.65e-06	10.06	0.006	0.000353	0
+Case 2: CCT catches [u of the case table]	0.28	2 U vertical	0.713	0.8	-0.595	9.89	0.005	0.000353	1.96
+Case 3: CCT catches, Francis weighting	0.2	5 U lateral	0.882	0.74	2.84e-06	7.06	0.026	0.00026	0
+Case 3: CCT catches, Francis weighting [u of the case table]	0.2	2 U vertical	0.971	0.8	-0.858	10.04	0.006	0.00026	9.35
