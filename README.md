@@ -9,6 +9,9 @@ jumbo squid predation) are fitted to the IFOP stock-assessment biomass of South 
 
 Repository: <https://github.com/josetomontero/south-pacific-hake-collapse>
 
+Archive: Zenodo, <https://doi.org/10.5281/zenodo.24471896> (all versions). Version 1.0.0,
+<https://doi.org/10.5281/zenodo.24471897>.
+
 License: MIT for the code and CC BY 4.0 for the data and outputs produced by the authors. The
 illustration of the hake is copyrighted (see "License and copyright" below).
 
