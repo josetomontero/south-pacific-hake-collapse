@@ -1,0 +1,16 @@
+{
+  "title": "Data and code for: Understanding the Collapse of the South Pacific Hake (Merluccius gayi gayi)",
+  "description": "Data and code of the manuscript \"Understanding the Collapse of the South Pacific Hake (Merluccius gayi gayi)\" (Ecological Applications, EAP25-0808). Population-dynamics models (Verhulst-Royama reproductive curve with lateral and vertical exogenous effects, and a prey model for jumbo squid predation) fitted to the stock-assessment biomass of South Pacific hake, 1968-2020. The repository holds the data, the R and Python code, all the candidate models of each period and their selection, the figures and the fits to the assessment cases and to the acoustic-survey biomass. The code is under the MIT License and the data and outputs produced by the authors under CC BY 4.0. The illustration of the hake is copyrighted by Pablo Salinas Nass and is reproduced with permission (see README).",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {"name": "Montero, José T.", "affiliation": "Pontificia Universidad Católica de Chile"},
+    {"name": "Wiff, Rodrigo", "affiliation": "Pontificia Universidad Católica de Chile"},
+    {"name": "Rezende, Enrico", "affiliation": "Pontificia Universidad Católica de Chile"},
+    {"name": "Gelcich, Stefan", "affiliation": "Pontificia Universidad Católica de Chile"},
+    {"name": "Riquelme, Carlos", "affiliation": "Pontificia Universidad Católica de Chile"},
+    {"name": "Lima, Mauricio", "affiliation": "Pontificia Universidad Católica de Chile"}
+  ],
+  "keywords": ["South Pacific hake", "Merluccius gayi gayi", "population dynamics", "fisheries", "Humboldt Current Ecosystem", "ENSO", "stock collapse"]
+}
